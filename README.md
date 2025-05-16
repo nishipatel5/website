@@ -17,7 +17,9 @@ Make sure that all HTML files and image files (e.g., `profile.png`, `project2-1.
 
 ## 🚀 Running Locally
 
-This project is **not deployed**. You can view it by opening the `index.html` file directly in your browser:
+The link to the deployed project: https://purple-reggie-20.tiiny.site/index.html
+
+For running the project locally, You can view it by opening the `index.html` file directly in your browser:
 
 ### Steps:
 1. **Clone the repository**:
