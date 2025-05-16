@@ -22,5 +22,5 @@ This project is **not deployed**. You can view it by opening the `index.html` fi
 ### Steps:
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/portfolio-site.git
-   cd portfolio-site
+   git clone https://github.com/nishipatel5/website.git
+   cd website
