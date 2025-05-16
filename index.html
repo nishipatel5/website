@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nishi Patel - Portfolio</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Arial', sans-serif;
+			background-color: #1e1e1e;
+			/* Dark background */
+			color: #f4f4f4;
+			/* Light text */
+			line-height: 1.6;
+			transition: opacity 1s ease-in-out;
+			/* Smooth transition for opacity */
+		}
+
+		/* Header */
+		header {
+			background-color: #333;
+			/* Dark background */
+			color: white;
+			padding: 20px;
+			text-align: center;
+			transition: opacity 1s ease-in-out;
+		}
+
+		header nav ul {
+			list-style-type: none;
+		}
+
+		header nav ul li {
+			display: inline;
+			margin: 0 15px;
+		}
+
+		header nav ul li a {
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 18px;
+		}
+
+		header nav ul li a:hover {
+			color: #ff6347;
+			/* Orange on hover */
+		}
+
+		/* Home Section */
+		.intro {
+			text-align: center;
+			padding: 80px 20px;
+			background-color: #333;
+			/* Dark background */
+			color: white;
+			transition: opacity 1s ease-in-out;
+		}
+
+		.intro img {
+			width: 200px;
+			/* Increased size */
+			height: 200px;
+			/* Increased size */
+			border-radius: 50%;
+			margin-bottom: 20px;
+			transition: transform 1s ease-in-out;
+		}
+
+		.intro img:hover {
+			transform: scale(1.1);
+			/* Zoom effect on hover */
+		}
+
+		.intro h1 {
+			font-size: 36px;
+		}
+
+		.intro p {
+			font-size: 20px;
+		}
+
+		/* Tagline */
+		.intro p+p {
+			margin-top: 20px;
+			/* Adds space between the paragraph and tagline */
+		}
+
+		/* Footer */
+		footer {
+			background-color: #333;
+			/* Dark footer */
+			color: white;
+			text-align: center;
+			padding: 15px;
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Header and Navigation -->
+	<header>
+		<nav>
+			<ul>
+				<li><a href="about.html" class="nav-link">About</a></li>
+				<li><a href="projects.html" class="nav-link">Projects</a></li>
+				<li><a href="skills.html" class="nav-link">Skills</a></li>
+				<li><a href="contacts.html" class="nav-link">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Home Section -->
+	<section class="intro">
+		<img src="profile.png" alt="Nishi Patel">
+		<h1>Hello, my name is Nishi Patel, and I am currently an undergraduate student at California State University,
+			Northridge, where I am pursuing a Bachelor's degree in Computer Science. With a passion for technology and
+			problem-solving, I am actively seeking opportunities to expand my knowledge and gain practical experience in
+			software development. My academic journey has allowed me to develop a solid foundation in programming
+			languages, web development, and data structures, and I am eager to apply these skills to real-world
+			challenges and contribute to innovative projects.</h1>
+		<p>Passionate Computer Science student | Aspiring Software Engineer | Eager to Learn and Innovate</p>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<p>Copyright © Nishi Patel 2025</p>
+	</footer>
+
+	<script>
+		// Add fade-out effect to current page on navigation
+		const navLinks = document.querySelectorAll('.nav-link');
+		navLinks.forEach(link => {
+			link.addEventListener('click', (event) => {
+				event.preventDefault(); // Prevent default link behavior
+				document.body.style.opacity = '0'; // Fade-out effect
+
+				// Wait for the transition to complete and then navigate
+				setTimeout(() => {
+					window.location.href = link.href; // Navigate after fade-out
+				}, 1000); // Time should match the fade-out duration
+			});
+		});
+
+		// Fade-in effect on page load
+		window.onload = () => {
+			document.body.style.opacity = '1'; // Fade-in effect on page load
+		};
+	</script>
+</body>
+
+</html>

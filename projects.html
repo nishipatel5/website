@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Projects</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Arial', sans-serif;
+			background-color: #1e1e1e;
+			/* Dark background */
+			color: #f4f4f4;
+			/* Light text */
+			line-height: 1.6;
+		}
+
+		header {
+			background-color: #333;
+			/* Dark header */
+			color: white;
+			padding: 20px;
+			text-align: center;
+		}
+
+		header nav ul {
+			list-style-type: none;
+		}
+
+		header nav ul li {
+			display: inline;
+			margin: 0 15px;
+		}
+
+		header nav ul li a {
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		header nav ul li a:hover {
+			color: #ff6347;
+			/* Orange hover color */
+		}
+
+		.projects {
+			padding: 40px 20px;
+			background-color: #2b2b2b;
+			/* Dark background for project section */
+			margin: 20px auto;
+			max-width: 1000px;
+			border-radius: 8px;
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+		}
+
+		.projects h2 {
+			font-size: 32px;
+			color: #f4f4f4;
+			/* Light text */
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		.project {
+			margin: 30px 0;
+			padding: 20px;
+			background-color: #333;
+			/* Dark background for each project */
+			border-radius: 8px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+
+		.project h3 {
+			font-size: 24px;
+			color: #ff6347;
+			/* Orange text for project titles */
+			margin-bottom: 10px;
+		}
+
+		.project p {
+			font-size: 18px;
+			margin-bottom: 15px;
+		}
+
+		.project ul {
+			font-size: 16px;
+			margin-bottom: 15px;
+		}
+
+		.project a {
+			display: inline-block;
+			margin-top: 10px;
+			padding: 15px 25px;
+			/* Increased padding for better visibility */
+			background-color: #ff6347;
+			/* Bright orange background */
+			color: white;
+			text-decoration: none;
+			border-radius: 5px;
+			text-align: center;
+			font-size: 18px;
+			/* Increased font size for better readability */
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+			/* Added shadow for depth */
+		}
+
+		.project a:hover {
+			background-color: #e53d1e;
+			/* Darker orange on hover */
+			box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+			/* More intense shadow on hover */
+		}
+
+		/* Back Button */
+		.back-button {
+			display: inline-block;
+			margin-top: 20px;
+			padding: 10px 20px;
+			background-color: #333;
+			color: white;
+			text-decoration: none;
+			border-radius: 5px;
+			text-align: center;
+		}
+
+		.back-button:hover {
+			background-color: orange;
+			/* Hover color for back button */
+		}
+
+		footer {
+			background-color: #333;
+			/* Dark footer */
+			color: white;
+			text-align: center;
+			padding: 15px;
+			margin-top: 40px;
+		}
+
+		/* Modal */
+		.modal {
+			display: none;
+			position: fixed;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.8);
+			overflow: auto;
+		}
+
+		/* Modal content (image) */
+		.modal-content {
+			position: relative;
+			margin: auto;
+			max-width: 90%;
+			/* Limit width of image */
+			max-height: 90%;
+			/* Limit height of image */
+		}
+
+		.close {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			color: #fff;
+			font-size: 30px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+
+		.close:hover,
+		.close:focus {
+			color: #ff6347;
+		}
+
+		/* Image */
+		.modal img {
+			width: auto;
+			height: auto;
+			/* Ensure image maintains aspect ratio */
+			display: block;
+			margin: 0 auto;
+			/* Center the image */
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Header and Navigation -->
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Go Back</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Projects Section -->
+	<section class="projects">
+		<h2>My Projects</h2>
+
+		<!-- Project 1 -->
+		<div class="project">
+			<h3>Fake News Detection Using Machine Learning</h3>
+			<p>This project aimed to develop a machine learning model to detect and classify news articles as fake or
+				true. By using algorithms such as Logistic Regression, Random Forest, Gradient Boosting, and Decision
+				Trees, the project sought to address the growing issue of misinformation by automatically identifying
+				false news articles.</p>
+			<ul>
+				<li><strong>Technologies Used:</strong> Python, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, TF-IDF
+				</li>
+				<li><strong>Challenges Faced:</strong> Data imbalance, Model optimization, Feature selection</li>
+				<li><strong>Outcomes:</strong> High accuracy with Logistic Regression (90%), Random Forest (88%)</li>
+				<li><strong>Model Evaluation:</strong> Precision, recall, F1 score, and accuracy were used to evaluate
+					the models' performance.</li>
+				<li><strong>Real-world Impact:</strong> Potential for integration into news platforms and social media
+					sites for automatic fake news detection.</li>
+			</ul>
+		</div>
+
+		<!-- Project 2 -->
+		<div class="project">
+			<h3>StyleSync: Fashion Recommender App</h3>
+			<p>StyleSync is a mobile application designed to streamline wardrobe management and outfit planning while
+				promoting social engagement. The app offers an intuitive platform where users can visualize how clothing
+				items will look on their body shape through a virtual mannequin.</p>
+			<ul>
+				<li><strong>Technologies Used:</strong> Swift, SwiftUI, RealityKit, SceneKit, Blender, GitHub,
+					CocoaPods/Swift Package Manager</li>
+				<li><strong>Challenges Faced:</strong> 3D Rendering, User interface design, Customization features</li>
+				<li><strong>Outcomes:</strong> Successful prototype developed with interactive virtual wardrobe and
+					future features planned (AI-driven outfit suggestions, AR try-ons)</li>
+			</ul>
+			<a href="#" onclick="openModal('project2-1.png')">View Image 1</a>
+			<a href="#" onclick="openModal('project2-2.png')">View Image 2</a>
+		</div>
+
+		<!-- Project 3 -->
+		<div class="project">
+			<h3>Arduino OLED Stopwatch</h3>
+			<p>The Arduino OLED Stopwatch is a simple yet effective Arduino-based system that features an OLED display
+				for showing time and a push button for switching between different modes.</p>
+			<ul>
+				<li><strong>Technologies Used:</strong> Arduino NANO, OLED SSD1306, Adafruit GFX, C++</li>
+				<li><strong>Challenges Faced:</strong> Difficulty in controlling button presses for switching modes,
+					Time display resetting issues</li>
+				<li><strong>Outcomes:</strong> Fully functional stopwatch with mode switching and hands-on experience
+					with hardware interfacing</li>
+			</ul>
+			<a href="#" onclick="openModal('stopwatch1.png')">View Image 1</a>
+			<a href="#" onclick="openModal('stopwatch2.png')">View Image 2</a>
+		</div>
+
+		<!-- Project 4 -->
+		<div class="project">
+			<h3>Dice Roller Simulator</h3>
+			<p>The Dice Roller Simulator simulates the rolling of one or two dice, with the result displayed on an OLED
+				screen.</p>
+			<ul>
+				<li><strong>Technologies Used:</strong> Arduino UNO/NANO, OLED SSD1306, Adafruit GFX, C++</li>
+				<li><strong>Challenges Faced:</strong> Managing multiple dice rolls, Button press debounce issues</li>
+				<li><strong>Outcomes:</strong> Interactive dice rolling with dynamic display updates and buzzer for
+					feedback</li>
+			</ul>
+			<a href="#" onclick="openModal('project4.jpg')">View Images</a>
+		</div>
+
+	</section>
+
+	<!-- Back Button -->
+	<a href="index.html" class="back-button">Back to Home</a>
+
+	<!-- Footer -->
+	<footer>
+		<p>Copyright © Nishi Patel 2025</p>
+	</footer>
+
+	<!-- Modal -->
+	<div id="imageModal" class="modal">
+		<span class="close" onclick="closeModal()">&times;</span>
+		<img id="modalImage" class="modal-content" src="">
+	</div>
+
+	<script>
+		// Open Modal
+		function openModal(imageSrc) {
+			document.getElementById("modalImage").src = imageSrc;
+			document.getElementById("imageModal").style.display = "block";
+		}
+
+		// Close Modal
+		function closeModal() {
+			document.getElementById("imageModal").style.display = "none";
+		}
+	</script>
+
+	<script>
+		// Add fade-out effect to current page on navigation
+		const navLinks = document.querySelectorAll('.nav-link');
+		navLinks.forEach(link => {
+			link.addEventListener('click', () => {
+				document.body.style.opacity = '0'; // Fade-out effect
+			});
+		});
+
+		// Wait for the transition to complete and then navigate
+		window.onload = () => {
+			document.body.style.opacity = '1'; // Fade-in effect on page load
+		};
+	</script>
+</body>
+
+</html>

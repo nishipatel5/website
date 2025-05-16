@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nishi Patel - Portfolio</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Arial', sans-serif;
+			background-color: #1e1e1e;
+			/* Dark background */
+			color: #f4f4f4;
+			/* Light text */
+			line-height: 1.6;
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
+			transition: opacity 1s ease-in-out;
+			/* Smooth transition for opacity */
+		}
+
+		/* Header */
+		header {
+			background-color: #333;
+			/* Dark background */
+			color: white;
+			padding: 20px;
+			text-align: center;
+			transition: opacity 1s ease-in-out;
+		}
+
+		header nav ul {
+			list-style-type: none;
+		}
+
+		header nav ul li {
+			display: inline;
+			margin: 0 15px;
+		}
+
+		header nav ul li a {
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 18px;
+		}
+
+		header nav ul li a:hover {
+			color: #ff6347;
+			/* Orange on hover */
+		}
+
+		/* About Section */
+		.about {
+			padding: 40px 20px;
+			background-color: #333;
+			/* Dark background for About section */
+			margin: 20px auto;
+			max-width: 800px;
+			border-radius: 8px;
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+			flex-grow: 1;
+			text-align: center;
+		}
+
+		.about h2 {
+			font-size: 32px;
+			color: #f4f4f4;
+			/* Light text */
+		}
+
+		.about p {
+			font-size: 18px;
+			margin: 20px 0;
+		}
+
+		/* Download Resume Button */
+		.about a {
+			display: inline-block;
+			padding: 20px 40px;
+			/* Made the button bigger */
+			background-color: #ff6347;
+			/* Bright orange background */
+			color: white;
+			text-decoration: none;
+			border-radius: 5px;
+			font-size: 18px;
+			font-weight: bold;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+			transition: background-color 0.3s ease, transform 0.2s ease;
+		}
+
+		.about a:hover {
+			background-color: #e53d1e;
+			/* Darker orange on hover */
+			transform: scale(1.05);
+			/* Slightly enlarge the button */
+		}
+
+		/* Go Back Button */
+		.back-button {
+			display: inline-block;
+			margin-top: 20px;
+			padding: 10px 20px;
+			background-color: #333;
+			/* Dark background for the button */
+			color: white;
+			text-decoration: none;
+			border-radius: 5px;
+			text-align: center;
+			transition: background-color 0.3s ease, transform 0.2s ease, opacity 1s ease-in-out;
+			font-weight: bold;
+			width: 200px;
+			/* Set width for consistency */
+		}
+
+		.back-button:hover {
+			background-color: #ff6347;
+			/* Orange hover color */
+			transform: scale(1.05);
+			/* Slightly enlarge the button */
+		}
+
+		/* Footer */
+		footer {
+			background-color: #333;
+			/* Dark footer */
+			color: white;
+			text-align: center;
+			padding: 15px;
+			width: 100%;
+			position: relative;
+			bottom: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Header and Navigation -->
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html" class="nav-link">Go Back</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- About Section -->
+	<section class="about">
+		<!-- Download Resume Button (Placed on top) -->
+		<a href="Nishi-resume.docx" download>Download My Resume</a>
+
+		<h2>About Me</h2>
+		<p>Hi, I'm Nishi Patel, a dedicated and adaptable Computer Science major currently attending California State
+			University – Northridge. I am actively seeking a Software Engineer Intern role to apply my technical skills,
+			gain real-world experience, and contribute to solving complex challenges. My goal is to continually grow as
+			a software developer by embracing new technologies and expanding my problem-solving abilities.</p>
+
+		<p>As a passionate student of computer science, I have developed a solid foundation in several programming
+			languages, including Java, Python, C++, and JavaScript. I am well-versed in object-oriented programming
+			(OOP) concepts and have a strong understanding of functional programming paradigms. Over the years, I have
+			worked extensively with various programming languages and tools, and I am always eager to learn new ones to
+			broaden my skill set.</p>
+
+		<p>In addition to my programming expertise, I have a keen interest in web development. I am skilled in HTML5,
+			CSS3, and JavaScript frameworks such as React and Angular. I have gained practical experience in front-end
+			development, building user-friendly and responsive websites and applications. My familiarity with web
+			development enables me to create interactive, efficient, and aesthetically pleasing user interfaces.</p>
+
+		<p>I also have a deep understanding of fundamental data structures and algorithms, such as linked lists, stacks,
+			queues, trees, and graphs. My experience with sorting, searching, and hashing algorithms has given me the
+			ability to approach problems analytically and optimize code for maximum efficiency. I am comfortable
+			analyzing the time and space complexities of algorithms, ensuring that I implement the most efficient
+			solution for each problem.</p>
+
+		<p>In addition to my technical skills, I have a strong understanding of the Software Development Lifecycle
+			(SDLC). I am familiar with all stages of software development, including requirements analysis, design,
+			coding, testing, and deployment. I have also worked with version control systems like Git, collaborating on
+			team projects to build robust and scalable software solutions.</p>
+
+		<p>One of the aspects I take pride in is my problem-solving and critical thinking ability. I enjoy approaching
+			complex problems by breaking them down into manageable parts and developing creative solutions. My strong
+			troubleshooting skills allow me to identify issues quickly and efficiently, ensuring smooth project
+			execution. I am always motivated to learn, adapt, and tackle challenges head-on.</p>
+
+		<p>Networking and security are also areas of interest to me. I have a solid understanding of computer networks,
+			including TCP/IP protocols and network security principles. I am familiar with tools and techniques used for
+			network troubleshooting and optimization, which enhances my ability to develop secure applications and
+			protect data integrity.</p>
+
+		<p>Throughout my academic journey, I have been actively involved in group projects and collaborative efforts. I
+			believe that effective communication and teamwork are essential for success in any field, and I continually
+			work on improving my verbal and written communication skills. I enjoy collaborating with others to exchange
+			ideas and find innovative solutions to problems.</p>
+
+		<p>One of my notable projects, "Fastest Food Place Available," used Kruskal’s minimum spanning tree algorithm to
+			determine the fastest food place to go to on campus based on crowd levels. This project was not only a great
+			opportunity to apply algorithmic concepts but also provided me with practical experience in software
+			development, data handling, and user experience design. It was a rewarding project that allowed me to
+			contribute to making campus life more efficient for my fellow students.</p>
+
+		<p>I am excited about the future of technology and software development and am eager to bring my skills,
+			passion, and dedication to a software engineering internship. I look forward to the opportunity to work with
+			innovative teams and contribute to meaningful projects that make a positive impact.</p>
+	</section>
+
+	<!-- Go Back Button -->
+	<a href="index.html" class="back-button">Back to Home</a>
+
+	<!-- Footer -->
+	<footer>
+		<p>Copyright © Nishi Patel 2025</p>
+	</footer>
+
+	<script>
+		// Add fade-out effect to current page on navigation
+		const navLinks = document.querySelectorAll('.nav-link');
+		navLinks.forEach(link => {
+			link.addEventListener('click', () => {
+				document.body.style.opacity = '0'; // Fade-out effect
+			});
+		});
+
+		// Wait for the transition to complete and then navigate
+		window.onload = () => {
+			document.body.style.opacity = '1'; // Fade-in effect on page load
+		};
+	</script>
+</body>
+
+</html>
